@@ -258,6 +258,7 @@ public class PaperLevelView {
         final var data = level.resolve("data");
         final var minecraft = data.resolve("minecraft");
         delete(minecraft.resolve("raids.dat"));
+        delete(minecraft.resolve("ender_dragon_fight.dat"));
         replaceSeed(minecraft.resolve("world_gen_settings.dat"), seed);
         delete(level.resolve("entities"));
         delete(level.resolve("poi"));
